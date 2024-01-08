@@ -19,6 +19,10 @@ const cookingManip_script = document.createElement('script');
 cookingManip_script.type = 'module';
 cookingManip_script.src = './scripts/cooking-manip.js';
 
+const navigation_script = document.createElement('script');
+navigation_script.type = 'module';
+navigation_script.src = './scripts/navigation.js';
+
 let append = '';
 (async () => {
 	append += home(0, true);
@@ -29,4 +33,5 @@ let append = '';
 	document.body.appendChild(breedManip_script);
 	document.body.appendChild(cutManip_script);
 	document.body.appendChild(cookingManip_script);
+	document.body.appendChild(navigation_script);
 })();
