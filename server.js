@@ -9,15 +9,15 @@ import cooking from './public/components/cooking.js';
 // let html = data;
 const breedManip_script = document.createElement('script');
 breedManip_script.type = 'module';
-breedManip_script.src = './public/scripts/breed-manip.js';
+breedManip_script.src = './scripts/breed-manip.js';
 
 const cutManip_script = document.createElement('script');
 cutManip_script.type = 'module';
-cutManip_script.src = './public/scripts/cut-manip.js';
+cutManip_script.src = './scripts/cut-manip.js';
 
 const cookingManip_script = document.createElement('script');
 cookingManip_script.type = 'module';
-cookingManip_script.src = './public/scripts/cooking-manip.js';
+cookingManip_script.src = './scripts/cooking-manip.js';
 
 let append = '';
 (async () => {
