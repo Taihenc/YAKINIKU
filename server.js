@@ -7,11 +7,16 @@ import breed from './public/components/breed.js';
 // import { fileURLToPath } from 'url';
 
 // let html = data;
+const breedManip_script = document.createElement('script');
+breedManip_script.type = 'module';
+breedManip_script.src = './public/scripts/breed-manip.js';
+
 let append = '';
 (async () => {
 	append += home(0, true);
 	append += await breed(1, false);
-	// append += home(2, false);
-	// append += home(3, false);
+	append += home(2, false);
+	append += home(3, false);
 	document.querySelector('#replace-me').outerHTML = append;
+	document.head.appendChild(breedManip_script);
 })();
