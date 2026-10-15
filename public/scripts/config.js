@@ -1,4 +1,4 @@
-// set this to the backend url
+// base url of the static resources (relative so it works under /YAKINIKU/)
 export const backend_url = './';
 
 /**

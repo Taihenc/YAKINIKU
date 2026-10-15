@@ -13,7 +13,4 @@ export default defineConfig({
 	esbuild: {
 		target: 'esnext',
 	},
-	optimizeDeps: {
-		include: ['realm-web'], // Ensure Vite pre-bundles this dependency
-	},
 });

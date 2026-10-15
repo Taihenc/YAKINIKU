@@ -2,12 +2,8 @@ import home from './public/components/home.js';
 import breed from './public/components/breed.js';
 import cut from './public/components/cut.js';
 import cooking from './public/components/cooking.js';
-import * as Realm from 'realm-web'; // Import realm-web directly
 
 (async () => {
-	// Initialize Realm app
-	const app = new Realm.App({ id: 'your-app-id' });
-
 	const loading = document.getElementById('loading');
 	let append = '';
 
